@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Adm date:</strong>
+  <%= @hospitalization.adm_date %>
+</p>
+
+<p>
+  <strong>Current days:</strong>
+  <%= @hospitalization.current_days %>
+</p>
+
+<p>
+  <strong>Current est los:</strong>
+  <%= @hospitalization.current_est_los %>
+</p>
+
+<p>
+  <strong>Current est dsc date:</strong>
+  <%= @hospitalization.current_est_dsc_date %>
+</p>
+
+<p>
+  <strong>Est los at admission:</strong>
+  <%= @hospitalization.est_los_at_admission %>
+</p>
+
+<p>
+  <strong>Est dsc date at admission:</strong>
+  <%= @hospitalization.est_dsc_date_at_admission %>
+</p>
+
+<p>
+  <strong>Physician est dsc date:</strong>
+  <%= @hospitalization.physician_est_dsc_date %>
+</p>
+
+<p>
+  <strong>Age at admission:</strong>
+  <%= @hospitalization.age_at_admission %>
+</p>
+
+<p>
+  <strong>Age group at admission:</strong>
+  <%= @hospitalization.age_group_at_admission %>
+</p>
+
+<p>
+  <strong>Mr dx at admission:</strong>
+  <%= @hospitalization.mr_dx_at_admission %>
+</p>
+
+<p>
+  <strong>Mr dx at admission group:</strong>
+  <%= @hospitalization.mr_dx_at_admission_group %>
+</p>
+
+<p>
+  <strong>Admitting program:</strong>
+  <%= @hospitalization.admitting_program %>
+</p>
+
+<%= link_to 'Edit', edit_hospitalization_path(@hospitalization) %> |
+<%= link_to 'Back', hospitalizations_path %>

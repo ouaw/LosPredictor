@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  adm_date: 2013-07-12 16:07:44
+  current_days: 1
+  current_est_los: 1
+  current_est_dsc_date: 2013-07-12 16:07:44
+  est_los_at_admission: 1
+  est_dsc_date_at_admission: 2013-07-12 16:07:44
+  physician_est_dsc_date: 2013-07-12 16:07:44
+  age_at_admission: 1
+  age_group_at_admission: MyString
+  mr_dx_at_admission: MyString
+  mr_dx_at_admission_group: MyString
+  admitting_program: MyString
+
+two:
+  adm_date: 2013-07-12 16:07:44
+  current_days: 1
+  current_est_los: 1
+  current_est_dsc_date: 2013-07-12 16:07:44
+  est_los_at_admission: 1
+  est_dsc_date_at_admission: 2013-07-12 16:07:44
+  physician_est_dsc_date: 2013-07-12 16:07:44
+  age_at_admission: 1
+  age_group_at_admission: MyString
+  mr_dx_at_admission: MyString
+  mr_dx_at_admission_group: MyString
+  admitting_program: MyString

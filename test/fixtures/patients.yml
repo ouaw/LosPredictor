@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phn: MyString
+  firstname: MyString
+  lastname: MyString
+  dob: 2013-07-12 16:08:50
+  currentaddr: MyString
+  currenttel: MyString
+
+two:
+  phn: MyString
+  firstname: MyString
+  lastname: MyString
+  dob: 2013-07-12 16:08:50
+  currentaddr: MyString
+  currenttel: MyString

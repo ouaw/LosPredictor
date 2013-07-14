@@ -1,0 +1,49 @@
+<h1>Listing hospitalizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adm date</th>
+      <th>Current days</th>
+      <th>Current est los</th>
+      <th>Current est dsc date</th>
+      <th>Est los at admission</th>
+      <th>Est dsc date at admission</th>
+      <th>Physician est dsc date</th>
+      <th>Age at admission</th>
+      <th>Age group at admission</th>
+      <th>Mr dx at admission</th>
+      <th>Mr dx at admission group</th>
+      <th>Admitting program</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hospitalizations.each do |hospitalization| %>
+      <tr>
+        <td><%= hospitalization.adm_date %></td>
+        <td><%= hospitalization.current_days %></td>
+        <td><%= hospitalization.current_est_los %></td>
+        <td><%= hospitalization.current_est_dsc_date %></td>
+        <td><%= hospitalization.est_los_at_admission %></td>
+        <td><%= hospitalization.est_dsc_date_at_admission %></td>
+        <td><%= hospitalization.physician_est_dsc_date %></td>
+        <td><%= hospitalization.age_at_admission %></td>
+        <td><%= hospitalization.age_group_at_admission %></td>
+        <td><%= hospitalization.mr_dx_at_admission %></td>
+        <td><%= hospitalization.mr_dx_at_admission_group %></td>
+        <td><%= hospitalization.admitting_program %></td>
+        <td><%= link_to 'Show', hospitalization %></td>
+        <td><%= link_to 'Edit', edit_hospitalization_path(hospitalization) %></td>
+        <td><%= link_to 'Destroy', hospitalization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hospitalization', new_hospitalization_path %>

@@ -1,0 +1,65 @@
+<%= form_for(@hospitalization) do |f| %>
+  <% if @hospitalization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hospitalization.errors.count, "error") %> prohibited this hospitalization from being saved:</h2>
+
+      <ul>
+      <% @hospitalization.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :adm_date %><br>
+    <%= f.datetime_select :adm_date %>
+  </div>
+  <div class="field">
+    <%= f.label :current_days %><br>
+    <%= f.number_field :current_days %>
+  </div>
+  <div class="field">
+    <%= f.label :current_est_los %><br>
+    <%= f.number_field :current_est_los %>
+  </div>
+  <div class="field">
+    <%= f.label :current_est_dsc_date %><br>
+    <%= f.datetime_select :current_est_dsc_date %>
+  </div>
+  <div class="field">
+    <%= f.label :est_los_at_admission %><br>
+    <%= f.number_field :est_los_at_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :est_dsc_date_at_admission %><br>
+    <%= f.datetime_select :est_dsc_date_at_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :physician_est_dsc_date %><br>
+    <%= f.datetime_select :physician_est_dsc_date %>
+  </div>
+  <div class="field">
+    <%= f.label :age_at_admission %><br>
+    <%= f.number_field :age_at_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :age_group_at_admission %><br>
+    <%= f.text_field :age_group_at_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :mr_dx_at_admission %><br>
+    <%= f.text_field :mr_dx_at_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :mr_dx_at_admission_group %><br>
+    <%= f.text_field :mr_dx_at_admission_group %>
+  </div>
+  <div class="field">
+    <%= f.label :admitting_program %><br>
+    <%= f.text_field :admitting_program %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
