@@ -12,32 +12,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :adm_date %><br>
-    <%= f.datetime_select :adm_date %>
+    <%= f.label :patient_id %><br>
+    <%= f.number_field :patient_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :admission_date %><br>
+    <%= f.date_select :admission_date %>
   </div>
   <div class="field">
     <%= f.label :current_days %><br>
     <%= f.number_field :current_days %>
   </div>
   <div class="field">
-    <%= f.label :current_est_los %><br>
-    <%= f.number_field :current_est_los %>
+    <%= f.label :current_estimated_los %><br>
+    <%= f.number_field :current_estimated_los %>
   </div>
   <div class="field">
-    <%= f.label :current_est_dsc_date %><br>
-    <%= f.datetime_select :current_est_dsc_date %>
+    <%= f.label :current_estimated_discharge_date %><br>
+    <%= f.date_select :current_estimated_discharge_date %>
   </div>
   <div class="field">
-    <%= f.label :est_los_at_admission %><br>
-    <%= f.number_field :est_los_at_admission %>
+    <%= f.label :estimated_los_at_admission %><br>
+    <%= f.number_field :estimated_los_at_admission %>
   </div>
   <div class="field">
-    <%= f.label :est_dsc_date_at_admission %><br>
-    <%= f.datetime_select :est_dsc_date_at_admission %>
+    <%= f.label :estimated_discharge_date_at_admission %><br>
+    <%= f.date_select :estimated_discharge_date_at_admission %>
   </div>
   <div class="field">
-    <%= f.label :physician_est_dsc_date %><br>
-    <%= f.datetime_select :physician_est_dsc_date %>
+    <%= f.label :physician_estimate_discharge_date %><br>
+    <%= f.date_select :physician_estimate_discharge_date %>
   </div>
   <div class="field">
     <%= f.label :age_at_admission %><br>
@@ -48,12 +53,12 @@
     <%= f.text_field :age_group_at_admission %>
   </div>
   <div class="field">
-    <%= f.label :mr_dx_at_admission %><br>
-    <%= f.text_field :mr_dx_at_admission %>
+    <%= f.label :most_responsible_diagnosis_at_admission %><br>
+    <%= f.text_field :most_responsible_diagnosis_at_admission %>
   </div>
   <div class="field">
-    <%= f.label :mr_dx_at_admission_group %><br>
-    <%= f.text_field :mr_dx_at_admission_group %>
+    <%= f.label :most_responsible_diagnosis_group_at_admission %><br>
+    <%= f.text_field :most_responsible_diagnosis_group_at_admission %>
   </div>
   <div class="field">
     <%= f.label :admitting_program %><br>

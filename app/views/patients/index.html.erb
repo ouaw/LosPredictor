@@ -3,12 +3,12 @@
 <table>
   <thead>
     <tr>
-      <th>Phn</th>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Dob</th>
-      <th>Currentaddr</th>
-      <th>Currenttel</th>
+      <th>Personal health number</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Date of birth</th>
+      <th>Current address</th>
+      <th>Current telephone</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,12 +18,12 @@
   <tbody>
     <% @patients.each do |patient| %>
       <tr>
-        <td><%= patient.phn %></td>
-        <td><%= patient.firstname %></td>
-        <td><%= patient.lastname %></td>
-        <td><%= patient.dob %></td>
-        <td><%= patient.currentaddr %></td>
-        <td><%= patient.currenttel %></td>
+        <td><%= patient.personal_health_number %></td>
+        <td><%= patient.first_name %></td>
+        <td><%= patient.last_name %></td>
+        <td><%= patient.date_of_birth %></td>
+        <td><%= patient.current_address %></td>
+        <td><%= patient.current_telephone %></td>
         <td><%= link_to 'Show', patient %></td>
         <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
         <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>

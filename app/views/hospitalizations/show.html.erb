@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Adm date:</strong>
-  <%= @hospitalization.adm_date %>
+  <strong>Admission date:</strong>
+  <%= @hospitalization.admission_date %>
 </p>
 
 <p>
@@ -11,28 +11,28 @@
 </p>
 
 <p>
-  <strong>Current est los:</strong>
-  <%= @hospitalization.current_est_los %>
+  <strong>Current estimated los:</strong>
+  <%= @hospitalization.current_estimated_los %>
 </p>
 
 <p>
-  <strong>Current est dsc date:</strong>
-  <%= @hospitalization.current_est_dsc_date %>
+  <strong>Current estimated discharge date:</strong>
+  <%= @hospitalization.current_estimated_discharge_date %>
 </p>
 
 <p>
-  <strong>Est los at admission:</strong>
-  <%= @hospitalization.est_los_at_admission %>
+  <strong>Estimated los at admission:</strong>
+  <%= @hospitalization.estimated_los_at_admission %>
 </p>
 
 <p>
-  <strong>Est dsc date at admission:</strong>
-  <%= @hospitalization.est_dsc_date_at_admission %>
+  <strong>Estimated discharge date at admission:</strong>
+  <%= @hospitalization.estimated_discharge_date_at_admission %>
 </p>
 
 <p>
-  <strong>Physician est dsc date:</strong>
-  <%= @hospitalization.physician_est_dsc_date %>
+  <strong>Physician estimate discharge date:</strong>
+  <%= @hospitalization.physician_estimate_discharge_date %>
 </p>
 
 <p>
@@ -46,18 +46,23 @@
 </p>
 
 <p>
-  <strong>Mr dx at admission:</strong>
-  <%= @hospitalization.mr_dx_at_admission %>
+  <strong>Most responsible diagnosis at admission:</strong>
+  <%= @hospitalization.most_responsible_diagnosis_at_admission %>
 </p>
 
 <p>
-  <strong>Mr dx at admission group:</strong>
-  <%= @hospitalization.mr_dx_at_admission_group %>
+  <strong>Most responsible diagnosis group at admission:</strong>
+  <%= @hospitalization.most_responsible_diagnosis_group_at_admission %>
 </p>
 
 <p>
   <strong>Admitting program:</strong>
   <%= @hospitalization.admitting_program %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @hospitalization.patient_id %>
 </p>
 
 <%= link_to 'Edit', edit_hospitalization_path(@hospitalization) %> |

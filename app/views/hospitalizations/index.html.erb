@@ -3,18 +3,19 @@
 <table>
   <thead>
     <tr>
-      <th>Adm date</th>
+      <th>Admission date</th>
       <th>Current days</th>
-      <th>Current est los</th>
-      <th>Current est dsc date</th>
-      <th>Est los at admission</th>
-      <th>Est dsc date at admission</th>
-      <th>Physician est dsc date</th>
+      <th>Current estimated los</th>
+      <th>Current estimated discharge date</th>
+      <th>Estimated los at admission</th>
+      <th>Estimated discharge date at admission</th>
+      <th>Physician estimate discharge date</th>
       <th>Age at admission</th>
       <th>Age group at admission</th>
-      <th>Mr dx at admission</th>
-      <th>Mr dx at admission group</th>
+      <th>Most responsible diagnosis at admission</th>
+      <th>Most responsible diagnosis group at admission</th>
       <th>Admitting program</th>
+      <th>Patient</th>
       <th></th>
       <th></th>
       <th></th>
@@ -24,18 +25,19 @@
   <tbody>
     <% @hospitalizations.each do |hospitalization| %>
       <tr>
-        <td><%= hospitalization.adm_date %></td>
+        <td><%= hospitalization.admission_date %></td>
         <td><%= hospitalization.current_days %></td>
-        <td><%= hospitalization.current_est_los %></td>
-        <td><%= hospitalization.current_est_dsc_date %></td>
-        <td><%= hospitalization.est_los_at_admission %></td>
-        <td><%= hospitalization.est_dsc_date_at_admission %></td>
-        <td><%= hospitalization.physician_est_dsc_date %></td>
+        <td><%= hospitalization.current_estimated_los %></td>
+        <td><%= hospitalization.current_estimated_discharge_date %></td>
+        <td><%= hospitalization.estimated_los_at_admission %></td>
+        <td><%= hospitalization.estimated_discharge_date_at_admission %></td>
+        <td><%= hospitalization.physician_estimate_discharge_date %></td>
         <td><%= hospitalization.age_at_admission %></td>
         <td><%= hospitalization.age_group_at_admission %></td>
-        <td><%= hospitalization.mr_dx_at_admission %></td>
-        <td><%= hospitalization.mr_dx_at_admission_group %></td>
+        <td><%= hospitalization.most_responsible_diagnosis_at_admission %></td>
+        <td><%= hospitalization.most_responsible_diagnosis_group_at_admission %></td>
         <td><%= hospitalization.admitting_program %></td>
+        <td><%= hospitalization.patient_id %></td>
         <td><%= link_to 'Show', hospitalization %></td>
         <td><%= link_to 'Edit', edit_hospitalization_path(hospitalization) %></td>
         <td><%= link_to 'Destroy', hospitalization, method: :delete, data: { confirm: 'Are you sure?' } %></td>

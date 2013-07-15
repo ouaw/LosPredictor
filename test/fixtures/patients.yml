@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  phn: MyString
-  firstname: MyString
-  lastname: MyString
-  dob: 2013-07-12 16:08:50
-  currentaddr: MyString
-  currenttel: MyString
+  personal_health_number: MyString
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: 2013-07-14 12:46:33
+  current_address: MyString
+  current_telephone: MyString
 
 two:
-  phn: MyString
-  firstname: MyString
-  lastname: MyString
-  dob: 2013-07-12 16:08:50
-  currentaddr: MyString
-  currenttel: MyString
+  personal_health_number: MyString
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: 2013-07-14 12:46:33
+  current_address: MyString
+  current_telephone: MyString

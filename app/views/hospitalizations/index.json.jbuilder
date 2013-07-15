@@ -1,4 +1,4 @@
 json.array!(@hospitalizations) do |hospitalization|
-  json.extract! hospitalization, :adm_date, :current_days, :current_est_los, :current_est_dsc_date, :est_los_at_admission, :est_dsc_date_at_admission, :physician_est_dsc_date, :age_at_admission, :age_group_at_admission, :mr_dx_at_admission, :mr_dx_at_admission_group, :admitting_program
+  json.extract! hospitalization, :admission_date, :current_days, :current_estimated_los, :current_estimated_discharge_date, :estimated_los_at_admission, :estimated_discharge_date_at_admission, :physician_estimate_discharge_date, :age_at_admission, :age_group_at_admission, :most_responsible_diagnosis_at_admission, :most_responsible_diagnosis_group_at_admission, :admitting_program, :patient_id
   json.url hospitalization_url(hospitalization, format: :json)
 end

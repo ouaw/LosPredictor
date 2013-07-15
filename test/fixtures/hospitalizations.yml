@@ -1,29 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  adm_date: 2013-07-12 16:07:44
+  admission_date: 2013-07-14 15:51:12
   current_days: 1
-  current_est_los: 1
-  current_est_dsc_date: 2013-07-12 16:07:44
-  est_los_at_admission: 1
-  est_dsc_date_at_admission: 2013-07-12 16:07:44
-  physician_est_dsc_date: 2013-07-12 16:07:44
+  current_estimated_los: 1
+  current_estimated_discharge_date: 2013-07-14 15:51:12
+  estimated_los_at_admission: 1
+  estimated_discharge_date_at_admission: 2013-07-14 15:51:12
+  physician_estimate_discharge_date: 2013-07-14 15:51:12
   age_at_admission: 1
   age_group_at_admission: MyString
-  mr_dx_at_admission: MyString
-  mr_dx_at_admission_group: MyString
+  most_responsible_diagnosis_at_admission: MyString
+  most_responsible_diagnosis_group_at_admission: MyString
   admitting_program: MyString
+  patient_id: 1
 
 two:
-  adm_date: 2013-07-12 16:07:44
+  admission_date: 2013-07-14 15:51:12
   current_days: 1
-  current_est_los: 1
-  current_est_dsc_date: 2013-07-12 16:07:44
-  est_los_at_admission: 1
-  est_dsc_date_at_admission: 2013-07-12 16:07:44
-  physician_est_dsc_date: 2013-07-12 16:07:44
+  current_estimated_los: 1
+  current_estimated_discharge_date: 2013-07-14 15:51:12
+  estimated_los_at_admission: 1
+  estimated_discharge_date_at_admission: 2013-07-14 15:51:12
+  physician_estimate_discharge_date: 2013-07-14 15:51:12
   age_at_admission: 1
   age_group_at_admission: MyString
-  mr_dx_at_admission: MyString
-  mr_dx_at_admission_group: MyString
+  most_responsible_diagnosis_at_admission: MyString
+  most_responsible_diagnosis_group_at_admission: MyString
   admitting_program: MyString
+  patient_id: 1
